@@ -1,6 +1,7 @@
-1. Search_News: Search for news and save them to the "news" subdirectory.
-2. News_Classified: Classify news and save them in the "news" subdirectory.
-3. News_Rating: Rate news and save them in the "processed_data" subdirectory.
-4. News_Processing: Merge all news and generate summaries, saving them in "summary.csv."
-5. TCN: Train with Temporal Convolutional Network (TCN) model and save results in the "result" folder.
+UESTC
 
+1. Search_News: The search.py file is used for file retrieval. It searches for files in the "news" subdirectory, naming them based on keywords.
+2. News_Classified: The news.py file is for file categorization. Categorized files have a classification label added in CSV format, saved as 1.csv, 2.csv, and so on.
+3. News_Rating: EMOTION.py is used to rate news articles. Processed files are saved in the "processed_data" subdirectory and grouped into three folders based on the rating criteria.
+4. News_Processing: The combine.py file merges news articles by date, calculating total comments and scores for each category. Results are stored in df_new.csv. SUMMARY.csv is used to generate news summaries, with the summaries added as a new column and saved in summary.csv.
+5. TNT: TNT.py is used for model training, and the directory contains the necessary training data. Training results are saved in the "result" folder, with a new test_n folder generated for each test, storing result images.
